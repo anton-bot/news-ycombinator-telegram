@@ -2,6 +2,10 @@
 
 A quick and dirty bot that reposts news from Hacker News (news.ycombinator.com) into a Telegram channel.
 
+## Subscribe ##
+
+Subscribe to the bot at [@news_ycombinator](https://t.me/news_ycombinator).
+
 ## Deployment ##
 
 - Create an Azure Function app.
