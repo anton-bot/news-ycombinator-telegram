@@ -114,6 +114,11 @@ function extractNewsFromHtml($, $articles, votes, links, comments) {
         // Escape _, otherwise it turns to italic:
         url = url.replace(/_/g, '\\_');
 
+        // Handle self-posts which are relative URLs:
+        if (!url.toLowerCase().startsWith('http')) {
+            url = NEWS_URL + url;
+        }
+        
         news.push({url, title, score, commentLink, commentCount});
     });
     return news;
